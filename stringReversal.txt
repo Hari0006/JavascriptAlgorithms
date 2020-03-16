@@ -1,0 +1,17 @@
+# Reverse a string using array reverse method
+
+const stringReversalUsingReverse = (string) => [...string].reverse().join('');
+
+# Reverse a string using for-loop method
+
+const stringReversalUsingForLoop = (string) => {
+  let reversedString = '';
+  for (let i = 0; i < string.length; i++) {
+    reversedString = string[i] + reversedString
+  }
+  return reversedString;
+}
+
+# Reverse a string using reduce method
+
+const stringReversalUsingReduce = (string) => [...string].reduce((reversedString, character) => character + reversedString,'')
