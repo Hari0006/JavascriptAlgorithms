@@ -1,0 +1,8 @@
+# Program to reverse a given integer
+
+const reverseInt = (number) => {
+  if(number < 0) {
+    return -1*parseInt([...number.toString()].reverse().join(''))
+  }
+  return parseInt([...number.toString()].reverse().join(''))
+}

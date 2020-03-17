@@ -1,0 +1,6 @@
+const intPalindrome = (number) => {
+  if(number < 0) {
+    return (-1*parseInt([...number.toString()].reverse().join(''))) === number
+  }
+  return parseInt([...number.toString()].reverse().join('')) === number
+}
